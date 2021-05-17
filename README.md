@@ -5,6 +5,35 @@ A GNU Radio out-of-tree (OOT) module to demodulate and decode Automatic Dependen
 
 Note, the `master` branch of this repository is currently maintained for GNU Radio 3.8. The GNU Radio 3.7 support is on the `maint-3.7` branch.
 
+## Fork Note
+
+This fork was made to address a couple errors I hit when running with GNURadio 3.8 and newer socketio libraries.
+
+I also changed the example to run with `RTL-SDR` since that was what I had.
+
+Here's the `pip freeze` I ended up with to get the webserver working:
+
+```
+bidict==0.21.2
+click==8.0.0
+Flask==2.0.0
+Flask-SocketIO==5.0.3
+gevent==21.1.2
+gevent-websocket==0.10.1
+greenlet==1.1.0
+itsdangerous==2.0.0
+Jinja2==3.0.0
+MarkupSafe==2.0.0
+numpy==1.20.3
+python-engineio==4.2.0
+python-socketio==5.3.0
+pyzmq==22.0.3
+Werkzeug==2.0.0
+zmq==0.0.0
+zope.event==4.5.0
+zope.interface==5.4.0
+```
+
 ### Clone for GNU Radio 3.8
 
 ```bash
